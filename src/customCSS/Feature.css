@@ -1,0 +1,7 @@
+.Feat {
+    background-image: url("../images/joshPF.png") no-repeat top center fixed;
+    background-size: contain;
+    min-height: 80vh;
+    height: 100%;
+    width: 100%;
+}
