@@ -4,7 +4,11 @@ import './customCSS/Feature.css';
 const Feature = () => {
     return (
         <div className="Feat">
-            feature
+            <div className="FeatPic">
+            </div>
+            <div className="FeatGreet">
+                Welcome to my freakin' site!
+            </div >
         </div>
     );
 }
