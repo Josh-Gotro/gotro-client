@@ -7,7 +7,7 @@ const Feature = () => {
             <div className="FeatPic">
             </div>
             <div className="FeatGreet">
-                Welcome to my freakin' site!
+                Welcome!
             </div >
         </div>
     );

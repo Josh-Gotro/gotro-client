@@ -4,6 +4,7 @@ import { RecoilRoot } from 'recoil';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import NavBar from './NavBar';
 import Feature from './Feature';
+import Intro from './Intro';
 import RecentWork from './RecentWork';
 import SayHi from './SayHi';
 import Footer from './Footer';
@@ -15,6 +16,7 @@ function App() {
         <RecoilRoot>
           <NavBar />
           <Feature />
+          <Intro />
           <RecentWork />
           <SayHi />
           {/* <Switch>
