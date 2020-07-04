@@ -1,0 +1,101 @@
+.Nav {
+    border-bottom: 1px solid rgb(212, 175, 55);
+    display: inline-grid;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 5px;
+    grid-template-columns:
+    [col-1-start]15%
+    [col-1-end col-2-start]10%
+    [col-2-end col-3-start]10%
+    [col-3-end col-4-start]auto
+    [col-4-end col-5-start]10%
+    [col-5-end col-6-start]10%
+    [col-6-end col-7-start]15%
+    [col-7-end];
+    align-items: center;
+    min-height: 10vh;
+}
+
+.NavMe {
+    /* padding-left: 450px;
+    align-items: center; */
+}
+
+.NavRW {
+    grid-column: col-4-end;
+    grid-column-end: col-5-end;
+    text-align: center;
+    /* border: 1px solid rgb(212, 175, 55); */
+    border-radius: 10px; 
+    padding: 5%;
+}
+
+.NavHi {
+    grid-column: col-6-end;
+    text-align: center;
+    border: 1px solid rgb(212, 175, 55);
+    border-radius: 10px; 
+    padding: 5%;
+}
+
+
+/* *********************************** */
+/* SWITCH */
+.switch {
+    grid-column: col-3-end;
+    justify-self: center;
+    align-items: center;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background: linear-gradient(to bottom right, gold, purple);
+    -webkit-background-clip: inherit;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: pink;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px black;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}

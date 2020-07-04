@@ -1,6 +1,6 @@
 .Feat {
-    border: 1px solid blue;
-
+    /* border: 1px solid blue; */
+    padding-top: 3%;
     width: 100%;
     display: inline-grid;
 
@@ -45,6 +45,20 @@
     color: white;
     align-self: center;
     text-align: right;
+}
+.FancyText1 {
+  background: -webkit-linear-gradient(black, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+.FancyText2 {
+  background: -webkit-linear-gradient(#eee, pink);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 
 
@@ -108,7 +122,7 @@
 
 @media (max-width: 500px) {
     .Feat {
-        border: 1px solid green;
+        /* border: 1px solid green; */
 
         background-color: black;
         width: 100%;
@@ -138,6 +152,7 @@
         grid-row-end: row-4-end;
         background-image: url("../images/joshPF.png") ;
         margin: 5%;
+        /* padding-left: 2%; */
         background-size: 100%;
         background-repeat: no-repeat;
         background-size: contain;
@@ -152,6 +167,8 @@
         font-size: calc(2.8em + 1vw);    
         -webkit-margin-bottom-collapse: collapse;
         text-align: right;
+        margin-left: 18%;
+
 
 }
 
