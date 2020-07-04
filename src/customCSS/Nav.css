@@ -1,6 +1,7 @@
 .Nav {
     border-bottom: 1px solid rgb(212, 175, 55);
     display: inline-grid;
+    background-color: rgba(0,0,0,.7);
     width: 100%;
     padding-left: 10px;
     padding-right: 5px;
@@ -14,12 +15,14 @@
     [col-6-end col-7-start]15%
     [col-7-end];
     align-items: center;
-    min-height: 10vh;
+    min-height: 4rem;
+    position: fixed;
 }
 
 .NavMe {
-    /* padding-left: 450px;
-    align-items: center; */
+    border-radius: 10px; 
+    text-align: center;
+    padding: 5%;
 }
 
 .NavRW {
@@ -37,6 +40,21 @@
     border: 1px solid rgb(212, 175, 55);
     border-radius: 10px; 
     padding: 5%;
+}
+
+.NavMe:hover {
+    color: blueviolet;
+    border: 1px solid blueviolet;
+}
+
+.NavRW:hover {
+    color: blueviolet;
+    border: 1px solid blueviolet;
+}
+
+.NavHi:hover {
+    color: blueviolet;
+    border: 1px solid blueviolet;
 }
 
 
@@ -75,12 +93,13 @@
 .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 25px;
+    width: 25px;
     left: 4px;
     bottom: 4px;
-    background: linear-gradient(to bottom right, gold, purple);
-    -webkit-background-clip: inherit;
+    border: 1px solid blueviolet;
+    background: linear-gradient(to bottom right, gold, blueviolet);
+    /* -webkit-background-clip: inherit; */
     -webkit-text-fill-color: transparent;
     -webkit-transition: .4s;
     transition: .4s;

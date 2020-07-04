@@ -5,16 +5,16 @@ const NavBar = () => {
     return (
         <div className="Nav">
 
-            <div className="NavMe">gotro</div>
+            <a href="#gotro" className="NavMe">gotro</a>
 
             <label class="switch">
                 <input type="checkbox"></input>
                 <span class="slider"></span>
             </label>
 
-            <div className="NavRW"> recent work </div>
+            <a href="#RW" className="NavRW"> recent work </a>
 
-            <div className="NavHi"> say hello </div>
+            <a href="#hello" className="NavHi"> say hello </a>
 
         </div>
     );

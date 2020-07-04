@@ -2,7 +2,16 @@
     margin: 0;
     padding: 0;
     color: rgb(212, 175, 55);
+    scroll-behavior: smooth;
 }
+
+a {
+    text-decoration: none;
+}
+/* light, medium, dark gold */
+/* rgb(212, 160, 55) */
+/* rgb(133,109,34) */
+/* rgb(159,131,41) */
 
 /* *********************************** */
 /* Tablet */

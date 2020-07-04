@@ -1,3 +1,9 @@
+/* rgb(212, 160, 55) */
+/* rgb(133,109,34) */
+/* rgb(159,131,41) */
+
+
+
 .Intro {
 
     display: flex;
@@ -14,15 +20,16 @@
     /* color: black; */
     font-size: 2.1rem;
     /* transition: 0.3s; */
-    border-radius: 5px; /* 5px rounded corners */
+    border-radius: 15px;
     margin: 8%;
-    border: 11px solid rgb(128, 98, 40);
-    background: -webkit-linear-gradient(rgb(212, 160, 55), rgb(85, 64, 22));
-    -webkit-background-clip: inherit;
+    /* border: 11px solid rgb(159,131,41); */
+    background: -webkit-linear-gradient(left top, rgb(248, 208, 170), rgb(212, 160, 55), rgb(133,109,34));
+    /* background-clip: padding-box; */
     -webkit-text-fill-color: transparent;
     text-align: center;
     line-height: 1.3;
     padding: 2%;
+    
 }
 
 /* *********************************** */
@@ -36,11 +43,11 @@
         color: black;
         font-size: 1.7rem;
         transition: 0.3s;
-        border-radius: 3px; /* rounded corners */
+        border-radius: 13px; 
         margin: 8%;
-        border: 10px solid rgb(128, 98, 40);
-        background: -webkit-linear-gradient(rgb(212, 160, 55), rgb(85, 64, 22));
-        -webkit-background-clip: inherit;
+        /* border: 10px solid rgb(159,131,41); */
+        background: -webkit-linear-gradient(left top, rgb(248, 208, 170), rgb(212, 160, 55), rgb(133,109,34));
+        /* -webkit-background-clip: text; */
         -webkit-text-fill-color: transparent;
         text-align: center;
         line-height: 1.3;
@@ -59,11 +66,11 @@
         color: black;
         font-size: 1.7rem;
         transition: 0.3s;
-        border-radius: 3px; /* 5px rounded corners */
+        border-radius: 13px; 
         margin: 8%;
-        border: 5px solid rgb(128, 98, 40);
-        background: -webkit-linear-gradient(rgb(212, 160, 55), rgb(85, 64, 22));
-        -webkit-background-clip: inherit;
+        /* border: 5px solid rgb(159,131,41); */
+        background: -webkit-linear-gradient(left top, rgb(248, 208, 170), rgb(212, 160, 55), rgb(133,109,34));
+        /* -webkit-background-clip: inherit; */
         -webkit-text-fill-color: transparent;
         text-align: center;
         line-height: 1.3;
