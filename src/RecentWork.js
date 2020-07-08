@@ -6,14 +6,21 @@ import extractor from './images/Extractor.png'
 
 
 const RecentWork = () => {
-
-    let [toggleModal, setToggleM] = useState(true)
     const proj1 = <iframe title="mrpx" width="560" height="315" src="https://www.youtube.com/embed/MqESv6l-Iig" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
     const proj2 = <iframe title="extrctr" width="560" height="315" src="https://www.youtube.com/embed/JYKm5tjoZT4" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-
-    const toggleM = () => {
+    let [viewProject, setViewProject] = useState(null)
+    let [toggleModal, setToggleM] = useState(true)
+    
+    const toggleM = (proj) => {
+        setViewProject(proj)
         setToggleM(!toggleModal)
-        console.log(toggleModal)
+        console.log(proj)
+    }
+
+    const toggleM2 = () => {
+        setViewProject(null)
+        setToggleM(!toggleModal)
+        // console.log(proj)
     }
 
     const showHide = () => {
@@ -27,15 +34,15 @@ const RecentWork = () => {
     return (
         <div id="RW">
             <div className="Gallery">
-                <div onClick={toggleM} className="Img-Container">
+                <div onClick={() => toggleM(proj1)} className="Img-Container">
                     <img src={mirepoix} alt="Mirepoix" data-original={proj1}></img>
                 </div>
-                <div onClick={toggleM} className="Img-Container">
+                <div onClick={() => toggleM(proj2)} className="Img-Container">
                     <img src={extractor} alt="Extractor" data-original={proj2}></img>
                 </div>
 
-                <div onClick={toggleM} className={showHide()}>
-                    <div className="Full">{proj1}</div>
+                <div onClick={toggleM2} className={showHide()}>
+                    <div className="Full">{viewProject}</div>
                 </div>
             </div>
         </div>
