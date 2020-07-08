@@ -20,7 +20,6 @@ const RecentWork = () => {
     const toggleM2 = () => {
         setViewProject(null)
         setToggleM(!toggleModal)
-        // console.log(proj)
     }
 
     const showHide = () => {
@@ -32,8 +31,9 @@ const RecentWork = () => {
     }
     
     return (
-        <div id="RW">
+        <div id="RW" className="RW" >
             <div className="Gallery">
+                <div className="TextTitle">RECENT WORK</div>
                 <div onClick={() => toggleM(proj1)} className="Img-Container">
                     <img src={mirepoix} alt="Mirepoix" data-original={proj1}></img>
                 </div>
