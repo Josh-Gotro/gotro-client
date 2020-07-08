@@ -7,9 +7,9 @@ const NavBar = () => {
 
             <a href="#gotro" className="NavMe">gotro</a>
 
-            <label class="switch">
+            <label className="switch">
                 <input type="checkbox"></input>
-                <span class="slider"></span>
+                <span className="slider"></span>
             </label>
 
             <a href="#RW" className="NavRW"> recent work </a>

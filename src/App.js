@@ -1,7 +1,7 @@
 import React from 'react';
 import './customCSS/App.css';
 import { RecoilRoot } from 'recoil';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import NavBar from './NavBar';
 import Feature from './Feature';
 import Intro from './Intro';
