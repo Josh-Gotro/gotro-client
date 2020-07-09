@@ -30,10 +30,11 @@ const RecentWork = () => {
         }
     }
     
-    return (
+    return (<>
+    <div className="RWTitle"> <h2>RECENT WORK</h2></div>
         <div id="RW" className="RW" >
             <div className="Gallery">
-                <div className="TextTitle">RECENT WORK</div>
+                {/* <div className="TextTitle">RECENT WORK</div> */}
                 <div onClick={() => toggleM(proj1)} className="Img-Container">
                     <img src={mirepoix} alt="Mirepoix" data-original={proj1}></img>
                 </div>
@@ -45,7 +46,7 @@ const RecentWork = () => {
                     <div className="Full">{viewProject}</div>
                 </div>
             </div>
-        </div>
+        </div></>
     );
 }
 
