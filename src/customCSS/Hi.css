@@ -1,0 +1,95 @@
+.HiContainer {
+    display: inline-grid;
+    grid-template-columns: 
+    [col-1-end col-2-start]35%
+    [col-2-end col-3-start]65%
+    [col-3-end];;
+
+    padding-top: 10%;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 8rem;
+}
+
+.HiForm {
+    /* background: rgb(212, 175, 55); */
+    width: 80%;
+    font-size: 2.1rem;
+    border-radius: 15px;
+    margin: 8%;
+    /* background: -webkit-linear-gradient(left top, rgb(248, 208, 170), rgb(212, 160, 55), rgb(133,109,34)); */
+    /* -webkit-text-fill-color: transparent; */
+    padding: 2%;
+}
+
+input {
+    /* color: black; */
+    border: 2px solid rgb(212, 160, 55);
+    background-color: rgba(212, 160, 55, 0.534);
+    /* -webkit-text-fill-color: transparent; */
+    height: 5vh;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+
+input::placeholder {
+    color: rgb(212, 160, 55);
+}
+
+#name {
+    width: 45%;
+}
+
+#email {
+    width: 45%;
+}
+
+#message {
+    border: 2px solid rgb(212, 160, 55);
+    background-color: rgba(212, 160, 55, 0.534);
+    font-size: 1.2rem;
+    width: 90%;
+    height: 15vh;
+}
+
+#message::placeholder {
+    color: rgb(212, 160, 55);
+}
+
+#hiButton {
+    background-color: rgba(212, 160, 55, 0.534);
+    width: 22.5%;
+    height: 5vh;
+    border: none;
+    color: rgb(212, 160, 55);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+
+}
+
+#hiButton:focus {
+    border: none;
+}
+
+input:focus {
+  border: none;
+}
+
+@media (max-width: 600px) {
+    .HiContainer {
+    display: inline-grid;
+    grid-template-rows: 
+    [row-1-end row-2-start]35%
+    [row-2-end row-3-start]65%
+    [row-3-end];;
+
+    padding-top: 10%;
+    width: 100%;
+}
+
+}
