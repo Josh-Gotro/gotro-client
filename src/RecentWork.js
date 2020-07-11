@@ -31,8 +31,9 @@ const RecentWork = () => {
     }
     
     return (<>
-    <div className="RWTitle"> <h2>RECENT WORK</h2></div>
-        <div id="RW" className="RW" >
+        <div id="RW" className="Spacer" ></div>
+        <div className="RWTitle"> <h2>recent work</h2></div>
+        <div  className="RW" >
             <div className="Gallery">
                 {/* <div className="TextTitle">RECENT WORK</div> */}
                 <div onClick={() => toggleM(proj1)} className="Img-Container">

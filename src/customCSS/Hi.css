@@ -9,27 +9,26 @@
     width: 100%;
 }
 
+#Hello {
+
+}
+
 h1 {
     text-align: center;
     font-size: 8rem;
 }
 
 .HiForm {
-    /* background: rgb(212, 175, 55); */
     width: 80%;
     font-size: 2.1rem;
     border-radius: 15px;
     margin: 8%;
-    /* background: -webkit-linear-gradient(left top, rgb(248, 208, 170), rgb(212, 160, 55), rgb(133,109,34)); */
-    /* -webkit-text-fill-color: transparent; */
     padding: 2%;
 }
 
 input {
-    /* color: black; */
     border: 2px solid rgb(212, 160, 55);
     background-color: rgba(212, 160, 55, 0.534);
-    /* -webkit-text-fill-color: transparent; */
     height: 5vh;
     margin: 8px 0;
     box-sizing: border-box;

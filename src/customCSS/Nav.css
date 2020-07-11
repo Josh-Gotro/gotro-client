@@ -30,7 +30,6 @@
     grid-column: col-4-end;
     grid-column-end: col-5-end;
     text-align: center;
-    /* border: 1px solid rgb(212, 175, 55); */
     border-radius: 10px; 
     padding: 5%;
     cursor: pointer;
