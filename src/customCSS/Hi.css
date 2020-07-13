@@ -3,8 +3,7 @@
     grid-template-columns: 
     [col-1-end col-2-start]35%
     [col-2-end col-3-start]65%
-    [col-3-end];;
-
+    [col-3-end];
     padding-top: 10%;
     width: 100%;
 }
@@ -57,6 +56,8 @@ input::placeholder {
     height: 15vh;
     min-height: 100px;
     margin-top: 6px;
+    outline-color: rgb(212, 160, 55);
+
 }
 
 #message::placeholder {
@@ -73,15 +74,18 @@ input::placeholder {
     text-decoration: none;
     cursor: pointer;
     font-size: 1.2rem;
-
+    margin-top: 1%;
 }
 
 #hiButton:focus {
     border: none;
+    outline-color: rgb(212, 160, 55);
+
 }
 
 input:focus {
   border: none;
+  outline-color: rgb(212, 160, 55);
 }
 
 @media (max-width: 750px) {
@@ -91,6 +95,7 @@ input:focus {
     [row-1-end row-2-start]20%
     [row-2-end row-3-start]80%
     [row-3-end];;
+    text-align: center;
 
     padding-top: 5%;
     width: 100%;
@@ -114,18 +119,31 @@ h1 {
     font-size: 6rem;
 }
 
+#name {
+    width: 90%;
+}
+
+#email {
+    width: 90%;
+}
+
 input {
     border: 2px solid rgb(212, 160, 55);
     background-color: rgba(212, 160, 55, 0.534);
     height: 5vh;
     /* margin: 8px 0; */
     /* box-sizing: border-box; */
-    font-size: 1.2rem;
+    font-size: .8rem;
+}
+
+#message {
+    height: 20vh;
+    font-size: .8rem;
 }
 
 #hiButton {
-    margin-top: 2%;
-    width: 25.5%;
+    margin-top: 3%;
+    width: 45vw;
     height: 6vh;
 }
 

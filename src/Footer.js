@@ -3,7 +3,9 @@ import React from 'react';
 const Footer = () => {
     return (
         <div>
-            footer
+            <i className="fab fa-github-alt"></i>
+
+
         </div>
     );
 }
