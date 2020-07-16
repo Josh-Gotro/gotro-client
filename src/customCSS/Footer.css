@@ -1,10 +1,7 @@
 .Footer {
     border-top: 1px solid rgb(212, 175, 75);
     display: inline-grid;
-    /* background-color: rgba(212, 175, 75, 0.678); */
     width: 100%;
-    padding-left: 10px;
-    padding-right: 5px;
     grid-template-columns:
     [col-1-start]auto
     [col-1-end col-2-start]15%
@@ -16,13 +13,12 @@
     [col-7-end];
     align-items: center;
     min-height: 14rem;
-    /* position: fixed; */
 }
 
 .Social {
     background-color: rgba(212, 175, 75, 0.678);
-            transition: 0.3s;
-        border-radius: 13px; 
+    transition: 0.3s;
+    border-radius: 13px; 
     margin: 27%;
     padding-bottom: 3%;
     padding-top: 5%;
@@ -33,33 +29,79 @@
 .sOne {
     grid-column-start: col-3-start;
     grid-column-end: col-3-end;
-        align-self: center;
+    align-self: center;
     text-align: center;
 }
 
 .sTwo {
     grid-column-start: col-4-start;
     grid-column-end: col-4-end;
-        align-self: center;
+    align-self: center;
     text-align: center;
 }
 
 .sThree {
     grid-column-start: col-5-start;
     grid-column-end: col-5-end;
-        align-self: center;
+    align-self: center;
     text-align: center;
 }
 
 @media (max-width: 500px) {
-.Social {
-    background-color: rgba(212, 175, 75, 0.678);
-            transition: 0.3s;
+
+    .Footer {
+        border-top: 1px solid rgb(212, 175, 75);
+        display: inline-grid;
+        width: 100%;
+        grid-template-columns:
+        [col-1-start]10%
+        [col-1-end col-2-start]10%
+        [col-2-end col-3-start]10%
+        [col-3-end col-4-start]10%
+        [col-4-end col-5-start]10%
+        [col-5-end col-6-start]10%
+        [col-6-end col-7-start]10%
+        [col-7-end col-8-start]10%
+        [col-8-end col-9-start]10%
+        [col-9-end col-10-start]10%
+        [col-10-end];
+        align-items: center;
+        min-height: 14rem;
+    }
+    .Social {
+        background-color: rgba(212, 175, 75, 0.678);
+        transition: 0.3s;
         border-radius: 13px; 
-    margin: 10%;
-    padding-bottom: 3%;
-    padding-top: 15%;
-    align-self: center;
-    text-align: center;
-}
+        padding-bottom: 3%;
+        padding-top: 15%;
+        align-self: center;
+        text-align: center;
+    }
+
+    .sOne {
+        grid-column-start: col-3-start;
+        grid-column-end: col-3-end;
+        align-self: center;
+        text-align: center;
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .sTwo {
+        grid-column-start: col-5-start;
+        grid-column-end: col-5-end;
+        align-self: center;
+        text-align: center;
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .sThree {
+        grid-column-start: col-7-start;
+        grid-column-end: col-7-end;
+        align-self: center;
+        text-align: center;
+        width: 10vw;
+        height: 10vw;
+    }
 }
