@@ -50,3 +50,16 @@
         align-self: center;
     text-align: center;
 }
+
+@media (max-width: 500px) {
+.Social {
+    background-color: rgba(212, 175, 75, 0.678);
+            transition: 0.3s;
+        border-radius: 13px; 
+    margin: 10%;
+    padding-bottom: 3%;
+    padding-top: 15%;
+    align-self: center;
+    text-align: center;
+}
+}
