@@ -1,48 +1,51 @@
 .Feat {
     /* border: 1px solid blue; */
-    padding-top: 8%;
+    padding-top: 12%;
     width: 100%;
     display: inline-grid;
 
     grid-template-columns:
-    [col-1-start]auto
+    [col-1-start]8%
     [col-1-end col-2-start]8%
     [col-2-end col-3-start]8%
     [col-3-end col-4-start]8%
-    [col-4-end col-5-start]8%
-    [col-5-end col-6-start]8%
-    [col-6-end col-7-start]8%
+    [col-4-end col-5-start]2%
+    [col-5-end col-6-start]auto
+    [col-6-end col-7-start]2%
     [col-7-end col-8-start]8%
-    [col-8-end col-9-start]auto
-    [col-9-end];
+    [col-8-end col-9-start]8%
+    [col-9-end col-10-start]8%
+    [col-10-end col-11-start]8%
+    [col-11-end];
     /* height: 100vh; */
     height: 10em;
 
-    grid-template-rows:
+    grid-template-rows: 
     [row-1-start]1fr
-    [row-1-end row-2-start]1fr
-    [row-2-end row-3-start]1fr
+    [row-1-end row-2-start]1fr 
+    [row-2-end row-3-start]1fr minmax(50px, 25px)
     [row-3-end];
     font-size: 3.2rem;
 }
 
 .FeatPic {
-    grid-column-start: col-4-start;
-    grid-column-end: col-6-end;
+    grid-column-start: col-6-start;
+    grid-column-end: col-7-end;
     grid-row-start: row-1-start;
     grid-row-end: row-3-end;
     background-image: url("../images/joshPF.png") ;
     background-size: 100%;
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
 }
 
 .FeatGreet {
-    grid-column-start: col-3-start;
-    grid-column-end: col-5-start;
-    grid-row-start: row-2-start;
+    grid-column-start: col-5-start;
+    grid-column-end: col-6-start;
+    grid-row-start: row-3-start;
     color: white;
-    align-self: center;
+    align-self: end;
     text-align: left;
 }
 
@@ -78,13 +81,15 @@
 /* *********************************** */
 /* Tablet */
 
-@media (min-width: 501px) and (max-width: 900px) {
+@media (min-width: 501px) and (max-width: 1100px) {
     .Feat {
-  border: 1px solid white;
+  /* border: 1px solid white; */
         background-color: black;
         width: 100%;
         display: inline-grid;
-        padding-top: 15%;
+        padding-top: 5%;
+        margin-top: 5%;
+        /* padding-bottom: 5%; */
 
         grid-template-columns:
         [col-1-start]10%
@@ -117,11 +122,12 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-size: contain;
+        background-position: center;
     }
 
     .FeatGreet {
         grid-column-start: col-2-end;
-        grid-column-end: col-2-end;
+        grid-column-end: col-3-end;
         grid-row-start: row-3-start;
         color: white;
         font-size: calc(4.4em + 1vw);
@@ -141,6 +147,7 @@
         background-color: black;
         width: 100%;
         display: inline-grid;
+        margin-bottom: 2%;
 
         grid-template-columns:
         [col-1-start]10%
@@ -154,8 +161,8 @@
         [row-2-end row-3-start]10%
         [row-3-end];
 
-        height: 50vh;
-        min-height: 30rem;
+        /* height: 40vh; */
+        min-height: 25rem;
         font-size: 50%;
     }
 
@@ -170,13 +177,13 @@
         background-size: 100%;
         background-repeat: no-repeat;
         background-size: contain;
-        min-height: 40rem;
+        min-height: 20rem;
     }
 
     .FeatGreet {
         grid-column-start: col-1-start;
         grid-column-end: col-1-end;
-        grid-row-end: row-3-end;
+        grid-row-end: row-1-end;
         color: white;
         font-size: calc(2.8em + 1vw);    
         -webkit-margin-bottom-collapse: collapse;

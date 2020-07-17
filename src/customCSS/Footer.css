@@ -66,7 +66,7 @@
         [col-9-end col-10-start]10%
         [col-10-end];
         align-items: center;
-        min-height: 14rem;
+        min-height: 7rem;
     }
     .Social {
         background-color: rgba(212, 175, 75, 0.678);

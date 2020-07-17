@@ -23,6 +23,7 @@ h1 {
     font-size: 2.1rem;
     border-radius: 15px;
     margin: 8%;
+
     padding: 2%;
 }
 
@@ -88,7 +89,7 @@ input:focus {
   outline-color: rgb(212, 160, 55);
 }
 
-@media (max-width: 750px) {
+@media (max-width: 775px) {
     .HiContainer {
     display: inline-block;
     grid-template-rows: 
