@@ -3,7 +3,7 @@ import './customCSS/Hi.css'
 import { useForm } from "react-hook-form";
 
 const SayHi = () => {
-    const { register, handleSubmit, watch, errors } = useForm();
+    const { register, handleSubmit, errors } = useForm();
 
     const onSubmit = (data, r) => {
         alert(`Thank you for your message from ${data.email}`)
@@ -38,8 +38,13 @@ const SayHi = () => {
         <form onSubmit={handleSubmit(onSubmit)}>
             <label>
                 <input id="name" name="name" type="text" placeholder="name" ref={register}></input><br></br>
-                        <input id="email" name="email" type="text" placeholder="email" ref={register({ required: true })}></input><br></br>
-                        <textarea id="message" name="message" placeholder="enter message" ref={register({ required: true })} ></textarea><br></br>
+
+                <input id="email" name="email" type="text" placeholder="email" ref={register({ required: true })}></input>
+                        {errors.name && <h2>Please enter an email address. </h2>}<br></br>
+
+                <textarea id="message" name="message" placeholder="enter message" ref={register({ required: true })} ></textarea>
+                        {errors.name && <p>Please enter a message. </p>}<br></br>
+
                 <button id="hiButton" type="submit" value="Submit" >send</button>
             </label>
         </form>
