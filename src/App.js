@@ -1,26 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './customCSS/App.css';
+import { RecoilRoot } from 'recoil';
+import { BrowserRouter as Router } from 'react-router-dom';
+import NavBar from './NavBar';
+import Feature from './Feature';
+import Intro from './Intro';
+import RecentWork from './RecentWork';
+import SayHi from './SayHi';
+import Footer from './Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <RecoilRoot>
+          <NavBar />
+          <Feature />
+          <Intro />
+          <RecentWork />
+          <SayHi />
+          {/* <Switch>
+            <Route path="/" exact component={Feature} />
+            <Route path="/projects" exact component={RecentWork} />
+            <Route path="/sayhi" component={SayHi} />
+          </Switch> */}
+          <Footer />
+        </RecoilRoot>
+      </Router>
+    </>
   );
 }
-
 export default App;
