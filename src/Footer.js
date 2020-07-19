@@ -2,7 +2,6 @@ import React from 'react';
 import GitIcon from './Icons/Github.js';
 import LinkedIcon from './Icons/Linkedin.js'
 import StravaIcon from './Icons/Strava.js'
-
 import './customCSS/Footer.css';
 
 const Footer = () => {
