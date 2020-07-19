@@ -9,7 +9,8 @@ const SayHi = () => {
         alert(`Thank you for your message from ${data.email}`)
         console.log(data)
 
-            fetch(`http://localhost:3001/messages`, {
+        fetch(`https://gotro-portfolio.herokuapp.com/messages`, {
+        // fetch(`http://localhost:3001/messages`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -17,7 +18,7 @@ const SayHi = () => {
                 },
                 body: JSON.stringify({
                     name: data.name,
-                    comment: data.message,
+                    comment: data.comment,
                     email: data.email,
                 })
             })
@@ -42,12 +43,12 @@ const SayHi = () => {
                 <input id="email" name="email" type="text" placeholder="email" ref={register({ required: true })}></input>
                         {errors.name && <h2>Please enter an email address. </h2>}<br></br>
 
-                <textarea id="message" name="message" placeholder="enter message" ref={register({ required: true })} ></textarea>
+                <textarea id="comment" name="comment" placeholder="enter message" ref={register({ required: true })} ></textarea>
                         {errors.name && <p>Please enter a message. </p>}<br></br>
 
                 <button id="hiButton" type="submit" value="Submit" >send</button>
             </label>
-        </form>
+        </form> 
         </div>
         </div>
     );

@@ -50,7 +50,7 @@ input::placeholder {
     width: 45%;
 }
 
-#message {
+#comment {
     border: 2px solid rgb(212, 160, 55);
     background-color: rgba(212, 160, 55, 0.534);
     font-size: 1.2rem;
@@ -62,7 +62,7 @@ input::placeholder {
     padding-left: 1.5%;
 }
 
-#message::placeholder {
+#comment::placeholder {
     color: rgb(212, 160, 55);
 }
 
@@ -138,7 +138,7 @@ input {
     font-size: .8rem;
 }
 
-#message {
+#comment {
     height: 20vh;
     font-size: .8rem;
 }
