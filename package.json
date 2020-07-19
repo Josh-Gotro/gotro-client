@@ -1,5 +1,6 @@
 {
   "name": "gotro-client",
+  "homepage": "https://www.joshgotro.com/",
   "version": "0.1.0",
   "private": true,
   "engines": {
