@@ -8,6 +8,9 @@ const SayHi = () => {
     const onSubmit = (data, r) => {
         alert(`Thank you for your message from ${data.email}`)
         console.log(data)
+        const templateId = 'template_5BX9LESm';
+        const serviceID = 'joshuagauthreaux_gmail_com';
+        sendFeedback(serviceID, templateId, { message_html: data.comment, from_name: data.name, reply_to: data.email })
 
         fetch(`https://gotro-portfolio.herokuapp.com/messages`, {
         // fetch(`http://localhost:3001/messages`, {
@@ -27,6 +30,17 @@ const SayHi = () => {
                     console.log(data)
                 })
             r.target.reset();
+    }
+
+    const sendFeedback = (serviceID, templateId, variables) => {
+        window.emailjs.send(
+            serviceID, templateId,
+            variables
+        ).then(res => {
+            console.log('Email successfully sent!')
+        })
+            // Handle errors here however you like, or use a React error boundary
+            .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
     }
 
 
