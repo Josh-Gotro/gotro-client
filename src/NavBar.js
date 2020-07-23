@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './customCSS/Nav.css';
+import { useRecoilState } from 'recoil';
+import { isBlackandGold } from './services/Atom.js';
+
 
 const NavBar = () => {
+    const [dm, setDM] = useRecoilState(isBlackandGold);
+    const [darkMode, setDarkMode] = useState(true);
+
     return (
         <div className="Nav">
 
