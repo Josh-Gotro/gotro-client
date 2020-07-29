@@ -1,69 +1,46 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+A portfolio created in react to showcase projects and contact me.   
+Visit this site live at [joshgotro.com](https://joshgotro.com)
 
-In the project directory, you can run:
+## Installation
+Clone repo and navigate into the folder.     
+Run `npm install` in the terminal.  
 
-### `yarn start`
+## Overview / Features
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The purpose of this portfolio is two-fold, to create a space where people can look at my projects and contact me, and to learn some new techniques and coding skills. 
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+One area I focused on learning was expanding my knowledge in CSS without using any external libraries. This project makes use of @media queries focused on making the site viewable from desktop, tablet, and mobile. I also learned about gradients, transitions, smooth srolling (an alternative to React Router Dom), and general page layout. 
 
-### `yarn test`
+I also wanted a contact form that would forward messages to my email. For this functionality I am using [Email.js](https://www.emailjs.com/), which allows you to send emails directly from client side. 
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In additon, I learned how to use SVG components in order to link my social media accounts. 
 
-### `yarn build`
+Lastly, I wanted to challenge myself to deploy the site so it can be visited live. Please note that the json.package and fetch calls are configured to point to Heroku, where the site is actively deployed. You can visit my site through the heroku domain, or from my personal domain where I have it forwarded.
+https://gotro-portfolio-frontend.herokuapp.com/
+https://joshgotro.com
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Optional Rails --API
+This project is written to work with a Rails 6 backend in order to persist messages from the Contact Form.   
+Repo can be found at https://github.com/Josh-Gotro/gotro-api
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+The contact form will still work without the Rails backend. This portfolio
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+gotro-client > src > SayHi.js  
+lines 15 - 31   
 
-### `yarn eject`
+  
+    
+      
+![Items to remove if backend not needed. (15 - 31)](./assets/Fetch.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# gotro-client
+  
+    
+      
+## Thank you for visiting.   
+For questions, comments, or concerns, please reach me through any of the following:  
+joshuagauthreaux@gmail.com    
+[LinkedIn](https://www.linkedin.com/in/josh-gauthreaux/)  
+[joshgotro.com](https://joshgotro.com)  
+   
