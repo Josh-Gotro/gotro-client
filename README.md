@@ -10,7 +10,7 @@ Run `npm install` in the terminal.
 
 The purpose of this portfolio is two-fold, to create a space where people can look at my projects and contact me, and to learn some new techniques and coding skills. 
 
-One area I focused on learning was expanding my knowledge in CSS without using any external libraries. This project makes use of @media queries focused on making the site viewable from desktop, tablet, and mobile. I also learned about gradients, transitions, smooth srolling (an alternative to React Router Dom), and general page layout. 
+One area I focused on learning was expanding my knowledge in CSS without using any external libraries. This project makes use of @media queries focused on making the site viewable from desktop, tablet, and mobile. I also learned about gradients, transitions, anchor linking, smooth srolling, and general page layout. 
 
 I also wanted a contact form that would forward messages to my email. For this functionality I am using [Email.js](https://www.emailjs.com/), which allows you to send emails directly from client side. 
 
