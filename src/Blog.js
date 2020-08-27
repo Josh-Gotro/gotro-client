@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './customCSS/Blog.css';
+import BlogTile from './BlogTile';
 
 
 const Blog = () => {
@@ -22,17 +23,17 @@ const Blog = () => {
         if(myBlog.items){ 
             return myBlog.items.map(blog => {
                 if(blog.categories.length > 0){
-                return <h3>{blog.title}</h3>
-                    console.log(blog.title)
+                    // console.log(blog)
+                    return <BlogTile key={blog.pubDate} blogData={blog} /> 
                 }
             })
         }
     }
         
     return (
-        <div>
-            {displayBlogs()}
-        </div>
+        <>
+           {displayBlogs()} 
+        </>
     );
 }
 
