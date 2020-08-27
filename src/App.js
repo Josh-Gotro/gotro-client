@@ -6,6 +6,7 @@ import NavBar from './NavBar';
 import Feature from './Feature';
 import Intro from './Intro';
 import RecentWork from './RecentWork';
+import Blog from './Blog';
 import SayHi from './SayHi';
 import Footer from './Footer';
 
@@ -18,6 +19,7 @@ function App() {
           <Feature />
           <Intro />
           <RecentWork />
+          <Blog />
           <SayHi />
           {/* <Switch>
             <Route path="/" exact component={Feature} />
