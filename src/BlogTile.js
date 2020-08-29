@@ -29,7 +29,7 @@ const BlogTile = (props) => {
     }
 
     function blogPost(){
-        return      <a href={`${link}`}>
+        return      <a target="_blank" href={`${link}`}>
                     <div className="ImageContainer">
                         <img src={`${thumbnail}`} className="Image"></img>
                     </div>

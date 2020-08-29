@@ -37,7 +37,7 @@ const Blog = () => {
                 {<h1>B<br />L<br />O<br />G</h1>}
             </div>
         </div>
-  
+
     );
 }
 
