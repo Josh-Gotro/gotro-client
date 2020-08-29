@@ -1,7 +1,6 @@
 import React from 'react';
 import './customCSS/App.css';
 import { RecoilRoot } from 'recoil';
-import { BrowserRouter as Router } from 'react-router-dom';
 import NavBar from './NavBar';
 import Feature from './Feature';
 import Intro from './Intro';
@@ -13,7 +12,6 @@ import Footer from './Footer';
 function App() {
   return (
     <>
-      <Router>
         <RecoilRoot>
           <NavBar />
           <Feature />
@@ -23,8 +21,11 @@ function App() {
           <SayHi />
           <Footer />
         </RecoilRoot>
-      </Router>
     </>
   );
 }
 export default App;
+
+// Recoil Root in place for future DarkMode 
+
+// Browser Router is installed for this project for future use. (hosting projects on this server)

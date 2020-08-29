@@ -5,6 +5,7 @@ import { isBlackandGold } from './services/Atom.js';
 
 
 const NavBar = () => {
+    // Recoil and standard hooks in place for future darkmode feature
     // const [dm, setDM] = useRecoilState(isBlackandGold);
     // const [darkMode, setDarkMode] = useState(true);
 
@@ -14,11 +15,11 @@ const NavBar = () => {
             <a href="#gotro" className="NavMe">gotro</a>
             <a href="#blog" className="NavBlog">blog</a>
 
-
-            <label className="switch">
+            {/* DarkMode Toggle  - - -  uncommont code below to see visual toggle function*/}
+            {/* <label className="switch">
                 <input type="checkbox"></input>
                 <span className="slider"></span>
-            </label>
+            </label> */}
 
             <a href="#RW" className="NavRW"> recent work </a>
 
