@@ -29,3 +29,5 @@ export default App;
 // Recoil Root in place for future DarkMode 
 
 // Browser Router is installed for this project for future use. (hosting projects on this server)
+// Add code below to imports, then wrap <Recoil Root> with <Router>, and then add a <switch> around routed components.
+// import { BrowserRouter as Router } from 'react-router-dom';	
