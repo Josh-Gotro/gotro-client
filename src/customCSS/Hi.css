@@ -8,10 +8,6 @@
     width: 100%;
 }
 
-#Hello {
-
-}
-
 h1 {
     text-align: end;
     font-size: 8rem;
@@ -133,8 +129,6 @@ input {
     border: 2px solid rgb(212, 160, 55);
     background-color: rgba(212, 160, 55, 0.534);
     height: 5vh;
-    /* margin: 8px 0; */
-    /* box-sizing: border-box; */
     font-size: .8rem;
 }
 

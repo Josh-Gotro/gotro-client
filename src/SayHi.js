@@ -39,14 +39,13 @@ const SayHi = () => {
         ).then(res => {
             console.log('Email successfully sent!')
         })
-            // Handle errors here however you like, or use a React error boundary
-            .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
+            .catch(err => console.error('There has been an error.  Here some thoughts on the error that occured:', err))
     }
 
 
     return (
         <div className="HiContainer">
-        <div id="hello">
+        <div>
             <h1>say hello</h1>
         </div>
         <div className="HiForm ">

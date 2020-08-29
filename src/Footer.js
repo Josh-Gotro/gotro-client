@@ -5,7 +5,7 @@ import StravaIcon from './Icons/Strava.js'
 import './customCSS/Footer.css';
 
 const Footer = () => {
-    
+
     return (
         <div className="Footer">
             <div className="Social sOne"><a href="https://github.com/Josh-Gotro" target="_blank" ><GitIcon width="24px" height="24px" /></a></div>
