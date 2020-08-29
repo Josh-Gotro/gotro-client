@@ -20,20 +20,24 @@ const Blog = () => {
     }, [mediumUrl]);
 
     function displayBlogs() {
-            return myBlog.items && myBlog.items.map(blog => {
-                if (blog.categories.length > 0) {
-                    return <BlogTile key={blog.pubDate} blogData={blog} />
-                }
-            })
+        console.log(myBlog)
+        return myBlog.items && myBlog.items.map(blog => {
+            if (blog.categories.length > 0) {
+                return <BlogTile key={blog.pubDate} blogData={blog} />
+            }
+        })
     }
 
     return (
-        <>
-            {/* <h1>B<br />L<br />O<br />G</h1> */}
+        <div className="BlogsContainer">
             <div className="Blogs">
                 {displayBlogs()}
             </div>
-        </>
+            <div className="BlogSectionTitle">
+                {<h1>B<br />L<br />O<br />G</h1>}
+            </div>
+        </div>
+  
     );
 }
 

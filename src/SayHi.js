@@ -46,7 +46,7 @@ const SayHi = () => {
 
     return (
         <div className="HiContainer">
-        <div id="hello">
+        <div>
             <h1>say hello</h1>
         </div>
         <div className="HiForm ">

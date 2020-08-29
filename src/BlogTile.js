@@ -14,11 +14,11 @@ const BlogTile = (props) => {
         return text.length > len ? text.slice(start, len) : text;
     }
 
-    function toText(node){
+    function toText(block){
         let tag = document.createElement('div');
-        tag.innerHTML = node;
-        node = tag.innerText;
-        return node
+        tag.innerHTML = block;
+        block = tag.innerText;
+        return block
     }
 
     function convertDate(date){
@@ -35,8 +35,8 @@ const BlogTile = (props) => {
                     </div>
                     <div className="TDContainer">
                         {/* <h3>{cleanTitle(title)}</h3> */}
-                        <h3>{truncateText(cleanTitle(title), 0, 40) + "..."}</h3><br/>
-                        <p>{truncateText(toText(content), 60, 300) + "..."}</p><br />
+                        <h3>{truncateText(cleanTitle(title), 0, 60)}</h3><br/>
+                        <p>{truncateText(toText(content), 48, 300) + "..."}</p><br />
                         <h4>{convertDate(pubDate)}</h4>
                     </div>
                     </a> 
@@ -44,10 +44,14 @@ const BlogTile = (props) => {
     }
 
 
+
+
     return (
-        <div className="BlogContainer">
+        
+        <div className="PostContainer">
             {blogPost()}
         </div>
+
     );
 }
 
