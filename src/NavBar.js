@@ -5,13 +5,15 @@ import { isBlackandGold } from './services/Atom.js';
 
 
 const NavBar = () => {
-    const [dm, setDM] = useRecoilState(isBlackandGold);
-    const [darkMode, setDarkMode] = useState(true);
+    // const [dm, setDM] = useRecoilState(isBlackandGold);
+    // const [darkMode, setDarkMode] = useState(true);
 
     return (
         <div className="Nav">
 
             <a href="#gotro" className="NavMe">gotro</a>
+            <a href="#blog" className="NavBlog">blog</a>
+
 
             <label className="switch">
                 <input type="checkbox"></input>

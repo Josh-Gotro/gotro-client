@@ -21,11 +21,6 @@ function App() {
           <RecentWork />
           <Blog />
           <SayHi />
-          {/* <Switch>
-            <Route path="/" exact component={Feature} />
-            <Route path="/projects" exact component={RecentWork} />
-            <Route path="/sayhi" component={SayHi} />
-          </Switch> */}
           <Footer />
         </RecoilRoot>
       </Router>

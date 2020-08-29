@@ -38,10 +38,23 @@
 .NavHi {
     grid-column: col-6-end;
     text-align: center;
-    border: 1px solid rgb(212, 175, 55);
+    /* border: 1px solid rgb(212, 175, 55); */
     border-radius: 10px; 
     padding: 5%;
     cursor: pointer;
+}
+
+.NavBlog {
+    grid-column: col-2-end;
+    border-radius: 10px; 
+    text-align: center;
+    padding: 5%;
+    cursor: pointer;
+}
+
+.NavBlog:hover {
+    color: blueviolet;
+    border: 1px solid blueviolet;
 }
 
 .NavMe:hover {

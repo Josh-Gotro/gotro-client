@@ -29,7 +29,7 @@ const Blog = () => {
     }
 
     return (
-        <div className="BlogsContainer">
+        <div id="blog" className="BlogsContainer">
             <div className="Blogs">
                 {displayBlogs()}
             </div>
