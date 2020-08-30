@@ -58,6 +58,10 @@ input::placeholder {
     padding-left: 1.5%;
 }
 
+.HiTitle {
+    padding-top: 35%;
+}
+
 #comment::placeholder {
     color: rgb(212, 160, 55);
 }
@@ -65,7 +69,7 @@ input::placeholder {
 #hiButton {
     background-color: rgba(212, 160, 55, 0.534);
     width: 22.5%;
-    height: 5vh;
+    height: 3vh;
     min-height: 40px;
     border: none;
     color: rgb(212, 160, 55);
@@ -86,6 +90,9 @@ input:focus {
   outline-color: rgb(212, 160, 55);
 }
 
+/* *********************************** */
+/* MOBILE */
+
 @media (max-width: 775px) {
     .HiContainer {
     display: inline-block;
@@ -99,7 +106,7 @@ input:focus {
     width: 100%;
     }
 
-    #Hello {
+    #hello {
         grid-row-start: row-1-start;
         grid-row-end: row-1-end;
     }
@@ -112,9 +119,14 @@ input:focus {
         grid-row-end: row-2-end;
     }
 
+    .HiTitle {
+        padding-top: 0%;
+    }
+
     h1 {
         text-align: center;
         font-size: 6rem;
+        margin-top: 10%;
     }
 
     #name {
