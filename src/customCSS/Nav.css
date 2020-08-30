@@ -27,8 +27,7 @@
 }
 
 .NavRW {
-    grid-column: col-4-end;
-    grid-column-end: col-5-end;
+    grid-column: col-2-end;
     text-align: center;
     border-radius: 10px; 
     padding: 5%;
@@ -45,7 +44,8 @@
 }
 
 .NavBlog {
-    grid-column: col-2-end;
+    grid-column: col-4-end;
+    grid-column-end: col-5-end;
     border-radius: 10px; 
     text-align: center;
     padding: 5%;

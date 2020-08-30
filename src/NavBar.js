@@ -13,7 +13,7 @@ const NavBar = () => {
         <div className="Nav">
 
             <a href="#gotro" className="NavMe">gotro</a>
-            <a href="#blog" className="NavBlog">blog</a>
+            <a href="#RW" className="NavRW"> recent work </a>
 
             {/* DarkMode Toggle  - - -  uncommont code below to see visual toggle function*/}
             {/* <label className="switch">
@@ -21,8 +21,8 @@ const NavBar = () => {
                 <span className="slider"></span>
             </label> */}
 
-            <a href="#RW" className="NavRW"> recent work </a>
-
+            
+            <a href="#blog" className="NavBlog">blog</a>
             <a href="#hello" className="NavHi"> say hello </a>
 
         </div>
