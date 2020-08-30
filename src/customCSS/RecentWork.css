@@ -90,6 +90,9 @@
   width: 100%;
 }
 
+/* *********************************** */
+/* Mobile */
+
 @media (max-width: 600px) {
   .Gallery {
     display: grid;
