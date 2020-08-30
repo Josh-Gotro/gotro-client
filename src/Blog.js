@@ -27,18 +27,18 @@ const Blog = () => {
             }
         })
     }
-  
+
 
     return (
         <div id="blog" className="BlogsContainer">
-            <div className="BlogSectionTitle" className="MobileView">
-                {<h1>BLOG</h1>}
+            <div className="MobileView">
+                <h1>BLOG</h1>
             </div>
             <div className="Blogs">
                 {displayBlogs()}
             </div>
-            <div className="BlogSectionTitle" className="DeskView">
-                {<h1>B<br />L<br />O<br />G</h1>}
+            <div className="DeskView">
+                <h1>B<br />L<br />O<br />G</h1>
             </div>
         </div>
 

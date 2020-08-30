@@ -1,88 +1,89 @@
 .HiContainer {
-    display: inline-grid;
-    grid-template-columns: 
+  display: inline-grid;
+  align-items: start;
+  grid-template-columns:
     [col-1-end col-2-start]35%
     [col-2-end col-3-start]65%
     [col-3-end];
-    padding-top: 10%;
-    width: 100%;
-}
-
-h1 {
-    text-align: end;
-    font-size: 8rem;
-    padding: 11%;
-}
-
-.HiForm {
-    width: 80%;
-    font-size: 2.1rem;
-    border-radius: 15px;
-    margin: 8%;
-
-    padding: 2%;
-}
-
-input {
-    border: 2px solid rgb(212, 160, 55);
-    background-color: rgba(212, 160, 55, 0.534);
-    height: 5vh;
-    min-height: 30px;
-    margin: 4px 0;
-    box-sizing: border-box;
-    font-size: 1.2rem;
-    padding-left: 1.5%;
-}
-
-input::placeholder {
-    color: rgb(212, 160, 55);
-}
-
-#name {
-    width: 45%;
-}
-
-#email {
-    width: 45%;
-}
-
-#comment {
-    border: 2px solid rgb(212, 160, 55);
-    background-color: rgba(212, 160, 55, 0.534);
-    font-size: 1.2rem;
-    width: 90%;
-    height: 15vh;
-    min-height: 100px;
-    margin-top: 6px;
-    outline-color: rgb(212, 160, 55);
-    padding-left: 1.5%;
+  padding-top: 8%;
+  width: 100%;
 }
 
 .HiTitle {
-    padding-top: 35%;
+  margin: 8%;
+  margin-top: 15%;
+  justify-self: end;
+}
+
+h1 {
+  text-align: end;
+  font-size: 8rem;
+}
+
+.HiForm {
+  width: 80%;
+  font-size: 2.1rem;
+  border-radius: 15px;
+  margin: 8%;
+
+  padding: 2%;
+}
+
+input {
+  border: 2px solid rgb(212, 160, 55);
+  background-color: rgba(212, 160, 55, 0.534);
+  height: 5vh;
+  min-height: 30px;
+  margin: 4px 0;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  padding-left: 1.5%;
+}
+
+input::placeholder {
+  color: rgb(212, 160, 55);
+}
+
+#name {
+  width: 45%;
+}
+
+#email {
+  width: 45%;
+}
+
+#comment {
+  border: 2px solid rgb(212, 160, 55);
+  background-color: rgba(212, 160, 55, 0.534);
+  font-size: 1.2rem;
+  width: 90%;
+  height: 15vh;
+  min-height: 100px;
+  margin-top: 6px;
+  outline-color: rgb(212, 160, 55);
+  padding-left: 1.5%;
 }
 
 #comment::placeholder {
-    color: rgb(212, 160, 55);
+  color: rgb(212, 160, 55);
 }
 
 #hiButton {
-    background-color: rgba(212, 160, 55, 0.534);
-    width: 22.5%;
-    height: 3vh;
-    min-height: 40px;
-    border: none;
-    color: rgb(212, 160, 55);
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 1.2rem;
-    margin-top: 1%;
+  background-color: rgba(212, 160, 55, 0.534);
+  width: 22.5%;
+  height: 3vh;
+  min-height: 40px;
+  border: none;
+  color: rgb(212, 160, 55);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 1%;
 }
 
 #hiButton:focus {
-    border: none;
-    outline-color: rgb(212, 160, 55);
-
+  border: none;
+  outline-color: rgb(212, 160, 55);
 }
 
 input:focus {
@@ -94,64 +95,64 @@ input:focus {
 /* MOBILE */
 
 @media (max-width: 775px) {
-    .HiContainer {
+  .HiContainer {
     display: inline-block;
-    grid-template-rows: 
-    [row-1-end row-2-start]20%
-    [row-2-end row-3-start]80%
-    [row-3-end];;
+    grid-template-rows:
+      [row-1-end row-2-start]20%
+      [row-2-end row-3-start]80%
+      [row-3-end];
     text-align: center;
 
     padding-top: 5%;
     width: 100%;
-    }
+  }
 
-    #hello {
-        grid-row-start: row-1-start;
-        grid-row-end: row-1-end;
-    }
+  #hello {
+    grid-row-start: row-1-start;
+    grid-row-end: row-1-end;
+  }
 
-    .HiForm {
-        width: 80%;
-        font-size: 2.1rem;
-        border-radius: 15px;
-        grid-row-start: row-2-start;
-        grid-row-end: row-2-end;
-    }
+  .HiForm {
+    width: 80%;
+    font-size: 2.1rem;
+    border-radius: 15px;
+    grid-row-start: row-2-start;
+    grid-row-end: row-2-end;
+  }
 
-    .HiTitle {
-        padding-top: 0%;
-    }
+  .HiTitle {
+    padding-top: 0%;
+  }
 
-    h1 {
-        text-align: center;
-        font-size: 6rem;
-        margin-top: 10%;
-    }
+  h1 {
+    text-align: center;
+    font-size: 6rem;
+    margin-top: 10%;
+  }
 
-    #name {
-        width: 90%;
-    }
+  #name {
+    width: 90%;
+  }
 
-    #email {
-        width: 90%;
-    }
+  #email {
+    width: 90%;
+  }
 
-    input {
-        border: 2px solid rgb(212, 160, 55);
-        background-color: rgba(212, 160, 55, 0.534);
-        height: 5vh;
-        font-size: .8rem;
-    }
+  input {
+    border: 2px solid rgb(212, 160, 55);
+    background-color: rgba(212, 160, 55, 0.534);
+    height: 5vh;
+    font-size: 0.8rem;
+  }
 
-    #comment {
-        height: 20vh;
-        font-size: .8rem;
-    }
+  #comment {
+    height: 20vh;
+    font-size: 0.8rem;
+  }
 
-    #hiButton {
-        margin-top: 3%;
-        width: 45vw;
-        height: 6vh;
-    }
+  #hiButton {
+    margin-top: 3%;
+    width: 45vw;
+    height: 6vh;
+  }
 }
