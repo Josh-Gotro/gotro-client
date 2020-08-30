@@ -12,6 +12,7 @@ const Intro = () => {
                     I love building rich and responsive apps and websites.
                 </div>
             </div>
+            <div></div>
         </div>
     );
 }

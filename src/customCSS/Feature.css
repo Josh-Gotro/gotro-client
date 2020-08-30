@@ -1,5 +1,4 @@
 .Feat {
-  /* border: 1px solid blue; */
   padding-top: 12%;
   width: 100%;
   display: inline-grid;
@@ -17,8 +16,7 @@
     [col-9-end col-10-start]8%
     [col-10-end col-11-start]8%
     [col-11-end];
-  /* height: 100vh; */
-  height: 10em;
+  height: 12em;
 
   grid-template-rows:
     [row-1-start]1fr
@@ -55,7 +53,6 @@
 }
 
 .FancyText1 {
-  /* background: -webkit-linear-gradient( right, blueviolet, rgb(85, 85, 109), rgb(58, 56, 56)); */
   background: black;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -83,13 +80,11 @@
 
 @media (min-width: 501px) and (max-width: 1100px) {
   .Feat {
-    /* border: 1px solid white; */
     background-color: black;
     width: 100%;
     display: inline-grid;
     padding-top: 5%;
     margin-top: 5%;
-    /* padding-bottom: 5%; */
 
     grid-template-columns:
       [col-1-start]10%
@@ -103,7 +98,7 @@
       [col-7-end col-8-start]10%
       [col-8-end col-9-start]10%
       [col-9-end];
-    height: 50em;
+    height: 60em;
 
     grid-template-rows:
       [row-1-start]1fr
@@ -140,8 +135,6 @@
 
 @media (max-width: 500px) {
   .Feat {
-    /* border: 1px solid green; */
-
     background-color: black;
     width: 100%;
     display: inline-grid;
@@ -159,7 +152,6 @@
       [row-2-end row-3-start]10%
       [row-3-end];
 
-    /* height: 40vh; */
     min-height: 25rem;
     font-size: 50%;
   }
@@ -171,7 +163,6 @@
     grid-row-end: row-4-end;
     background-image: url("../images/joshPF.png");
     margin: 5%;
-    /* padding-left: 2%; */
     background-size: 100%;
     background-repeat: no-repeat;
     background-size: contain;
