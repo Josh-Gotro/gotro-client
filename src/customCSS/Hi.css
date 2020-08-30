@@ -13,10 +13,10 @@
   margin: 8%;
   margin-top: 15%;
   justify-self: end;
+  text-align: end;
 }
 
 h1 {
-  text-align: end;
   font-size: 8rem;
 }
 
@@ -121,13 +121,12 @@ input:focus {
   }
 
   .HiTitle {
-    padding-top: 0%;
+    text-align: start;
+    margin-left: 12%;
   }
 
   h1 {
-    text-align: center;
     font-size: 6rem;
-    margin-top: 10%;
   }
 
   #name {

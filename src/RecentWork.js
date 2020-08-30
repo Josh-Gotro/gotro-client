@@ -32,7 +32,9 @@ const RecentWork = () => {
 
     return (<>
         <div id="RW" className="Spacer" ></div>
-        <div className="RWTitle"> <h2>recent work</h2></div>
+        <div className="RWTitle"> 
+            <h2>recent work</h2>
+        </div>
         <div className="RW" >
             <div className="Gallery">
                 <div onClick={() => toggleM(proj1)} className="Img-Container">

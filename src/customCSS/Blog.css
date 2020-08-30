@@ -14,7 +14,7 @@
     [col-2-end col-3-start]12%
     [col-3-end col-4-start]auto
     [col-4-end];
-  padding-top: 3%;
+  padding-top: 10%;
   width: 100%;
 }
 
@@ -62,6 +62,7 @@
 
   .BlogsContainer {
     display: inline-block;
+    padding-top: 18%;
     grid-template-rows:
       [row-1-end row-2-start]20%
       [row-2-end row-3-start]80%
@@ -92,6 +93,7 @@
   }
 
   .MobileView {
+    margin-top: 8%;
     display: inline;
   }
 }
