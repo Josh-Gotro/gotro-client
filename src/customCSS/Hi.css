@@ -97,50 +97,49 @@ input:focus {
 
     padding-top: 5%;
     width: 100%;
-}
+    }
 
-#Hello {
-    grid-row-start: row-1-start;
-    grid-row-end: row-1-end;
-}
+    #Hello {
+        grid-row-start: row-1-start;
+        grid-row-end: row-1-end;
+    }
 
-.HiForm {
-    width: 80%;
-    font-size: 2.1rem;
-    border-radius: 15px;
-    grid-row-start: row-2-start;
-    grid-row-end: row-2-end;
-}
+    .HiForm {
+        width: 80%;
+        font-size: 2.1rem;
+        border-radius: 15px;
+        grid-row-start: row-2-start;
+        grid-row-end: row-2-end;
+    }
 
-h1 {
-    text-align: center;
-    font-size: 6rem;
-}
+    h1 {
+        text-align: center;
+        font-size: 6rem;
+    }
 
-#name {
-    width: 90%;
-}
+    #name {
+        width: 90%;
+    }
 
-#email {
-    width: 90%;
-}
+    #email {
+        width: 90%;
+    }
 
-input {
-    border: 2px solid rgb(212, 160, 55);
-    background-color: rgba(212, 160, 55, 0.534);
-    height: 5vh;
-    font-size: .8rem;
-}
+    input {
+        border: 2px solid rgb(212, 160, 55);
+        background-color: rgba(212, 160, 55, 0.534);
+        height: 5vh;
+        font-size: .8rem;
+    }
 
-#comment {
-    height: 20vh;
-    font-size: .8rem;
-}
+    #comment {
+        height: 20vh;
+        font-size: .8rem;
+    }
 
-#hiButton {
-    margin-top: 3%;
-    width: 45vw;
-    height: 6vh;
-}
-
+    #hiButton {
+        margin-top: 3%;
+        width: 45vw;
+        height: 6vh;
+    }
 }
