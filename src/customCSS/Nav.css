@@ -15,41 +15,52 @@
     [col-6-end col-7-start]15%
     [col-7-end];
   align-items: center;
-  min-height: 4rem;
+  min-height: 5rem;
   position: fixed;
 }
 
+
+
 .NavMe {
+  height: 55%;
   border-radius: 10px;
   text-align: center;
-  padding: 5%;
+  padding: 3%;
   cursor: pointer;
+    margin: 2%;
+
 }
 
 .NavRW {
+  height: 55%;
   grid-column: col-2-end;
   text-align: center;
   border-radius: 10px;
-  padding: 5%;
+  padding: 3%;
   cursor: pointer;
+    margin: 2%;
+
 }
 
 .NavHi {
+  height: 55%;
   grid-column: col-6-end;
   text-align: center;
-  /* border: 1px solid rgb(212, 175, 55); */
   border-radius: 10px;
-  padding: 5%;
+  padding: 3%;
   cursor: pointer;
+  margin: 2%;
 }
 
 .NavBlog {
+  height: 55%;
   grid-column: col-4-end;
-  grid-column-end: col-5-end;
   border-radius: 10px;
   text-align: center;
-  padding: 5%;
+  padding: 3%;
   cursor: pointer;
+    margin: 2%;
+
 }
 
 .NavBlog:hover {
@@ -157,5 +168,4 @@ input:checked + .slider:before {
     min-height: 4rem;
     position: fixed;
   }
-
 }

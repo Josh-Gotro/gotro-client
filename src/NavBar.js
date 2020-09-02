@@ -23,7 +23,7 @@ const NavBar = () => {
 
             
             <a href="#blog" className="NavBlog">blog</a>
-            <a href="#hello" className="NavHi"> say <br />  hello </a>
+            <a href="#hello" className="NavHi"> say <br />hello </a>
 
         </div>
     );
