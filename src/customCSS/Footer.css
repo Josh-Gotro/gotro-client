@@ -104,4 +104,12 @@
         width: 10vw;
         height: 10vw;
     }
+    .sFour, a{
+        grid-column-start: col-9-start;
+        grid-column-end: col-9-end;
+        /* align-self: right; */
+        /* text-align: right; */
+
+    }
+
 }
