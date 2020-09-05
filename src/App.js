@@ -16,11 +16,11 @@ function App() {
     <div>
       <Helmet>
         <title>Gotro</title>
-        <meta property="og:title" content="Josh Gauthreaux's Portfolio" />
-        <meta property="og:description" content="Welcome! Check out my recent work, my weekly blog, or say hello!" />
-        <meta name="image" property="og:image" content={previewPic} />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://joshgotro.com" />
+        <meta prefix="og: http://ogp.me/ns#" property="og:title" content="Gotro" />
+        <meta prefix="og: http://ogp.me/ns#" property="og:description" content="Welcome! Check out my recent work, my weekly blog, or say hello!" />
+        <meta prefix="og: http://ogp.me/ns#" name="image" property="og:image" content={previewPic} />
+        <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website" />
+        <meta prefix="og: http://ogp.me/ns#" property="og:url" content="https://joshgotro.com" />
       </Helmet>
         <RecoilRoot>
           <NavBar />
