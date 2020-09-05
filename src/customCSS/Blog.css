@@ -45,6 +45,11 @@
   place-self: center;
 }
 
+#purp {
+  text-align: right;
+  color: blueviolet;
+}
+
 /* *********************************** */
 /* MOBILE */
 
@@ -95,5 +100,9 @@
   .MobileView {
     margin-top: 8%;
     display: inline;
+  }
+  #purp {
+    text-align: center;
+    color: blueviolet;
   }
 }

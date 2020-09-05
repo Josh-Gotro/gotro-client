@@ -38,7 +38,13 @@ const Blog = () => {
                 {displayBlogs()}
             </div>
             <div className="DeskView">
-                <h1>B<br />L<br />O<br />G</h1>
+                <h1>B</h1><h2 id="purp">F</h2>
+                <br />
+                <h1>L</h1><h2 id="purp">E</h2>
+                <br />
+                <h1>O</h1><h2 id="purp">E</h2>
+                < br />
+                <h1>G</h1 > <h2 id="purp">D</h2>
             </div>
         </div>
 
