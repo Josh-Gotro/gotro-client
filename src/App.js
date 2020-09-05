@@ -1,6 +1,6 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
-import previewPic from './images/joshPF.png'
+// import { Helmet } from 'react-helmet';
+// import previewPic from './images/joshPF.png'
 import './customCSS/App.css';
 import { RecoilRoot } from 'recoil';
 import NavBar from './NavBar';
@@ -14,14 +14,14 @@ import Footer from './Footer';
 function App() {
   return (
     <div>
-      <Helmet>
+      {/* <Helmet>
         <title>Gotro</title>
         <meta prefix="og: http://ogp.me/ns#" property="og:title" content="Gotro" />
         <meta prefix="og: http://ogp.me/ns#" property="og:description" content="Welcome! Check out my recent work, my weekly blog, or say hello!" />
         <meta prefix="og: http://ogp.me/ns#" name="image" property="og:image" content={previewPic} />
         <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website" />
         <meta prefix="og: http://ogp.me/ns#" property="og:url" content="https://joshgotro.com" />
-      </Helmet>
+      </Helmet> */}
         <RecoilRoot>
           <NavBar />
           <Feature />
