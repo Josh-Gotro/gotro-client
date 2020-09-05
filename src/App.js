@@ -1,4 +1,6 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
+import previewPic from './images/joshPF.png'
 import './customCSS/App.css';
 import { RecoilRoot } from 'recoil';
 import NavBar from './NavBar';
@@ -11,7 +13,15 @@ import Footer from './Footer';
 
 function App() {
   return (
-    <>
+    <div>
+      <Helmet>
+        <title>Gotro</title>
+        <meta property="og:title" content="Josh Gauthreaux's Portfolio" />
+        <meta property="og:description" content="Welcome! Check out my recent work, my weekly blog, or say hello!" />
+        <meta name="image" property="og:image" content={previewPic} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://joshgotro.com" />
+      </Helmet>
         <RecoilRoot>
           <NavBar />
           <Feature />
@@ -21,7 +31,7 @@ function App() {
           <SayHi />
           <Footer />
         </RecoilRoot>
-    </>
+    </div>
   );
 }
 export default App;
