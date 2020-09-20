@@ -28,7 +28,6 @@
   padding: 3%;
   cursor: pointer;
     margin: 2%;
-
 }
 
 .NavRW {
@@ -39,7 +38,6 @@
   padding: 3%;
   cursor: pointer;
     margin: 2%;
-
 }
 
 .NavHi {
@@ -60,7 +58,6 @@
   padding: 3%;
   cursor: pointer;
     margin: 2%;
-
 }
 
 .NavBlog:hover {
@@ -150,21 +147,10 @@ input:checked + .slider:before {
 @media (max-width: 775px) {
   .Nav {
     border-bottom: 1px solid rgb(212, 175, 75);
-    display: inline-grid;
+    display: flex;
     background-color: rgba(0, 0, 0, 0.88);
     width: 100%;
-    padding-left: 10px;
-    padding-right: 5px;
-    grid-template-columns:
-      [col-1-start]15%
-      [col-1-end col-2-start]auto
-      [col-2-end col-3-start]auto
-      [col-3-end col-4-start]auto
-      [col-4-end col-5-start]auto
-      [col-5-end col-6-start]auto
-      [col-6-end col-7-start]auto
-      [col-7-end];
-    align-items: center;
+    justify-content: space-between;
     min-height: 4rem;
     position: fixed;
   }
