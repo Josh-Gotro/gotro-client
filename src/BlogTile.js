@@ -6,7 +6,12 @@ const BlogTile = (props) => {
     const { title, link, thumbnail, content, pubDate } = props.blogData;
 
     function cleanTitle(checkTitle) {
-        checkTitle = checkTitle.replace("amp;", "");
+        while (checkTitle.includes("amp;")) {
+            checkTitle = checkTitle.replace("amp;", "");
+        }
+        while (checkTitle.includes("&gt;")){
+            checkTitle = checkTitle.replace("&gt;", ">");
+        }
         return checkTitle
     }
 

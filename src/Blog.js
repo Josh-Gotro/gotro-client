@@ -21,9 +21,13 @@ const Blog = () => {
 
     function displayBlogs() {
         console.log(myBlog)
+        let counter = 6;
         return myBlog.items && myBlog.items.map(blog => {
-            if (blog.categories.length > 0) {
-                return <BlogTile key={blog.pubDate} blogData={blog} />
+            if(counter > 0) {
+                if (blog.categories.length > 0) {
+                    counter--;
+                    return <BlogTile key={blog.pubDate} blogData={blog} />
+                }
             }
         })
     }
