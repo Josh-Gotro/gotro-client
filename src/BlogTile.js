@@ -34,9 +34,9 @@ const BlogTile = (props) => {
     }
 
     function blogPost() {
-        return <a target="_blank" href={`${link}`}>
+        return <a target="_blank" href={`${link}`} rel="noopener noreferrer">
             <div className="ImageContainer">
-                <img src={`${thumbnail}`} className="Image"></img>
+                <img src={`${thumbnail}`} className="Image" alt="blog splash image"></img>
             </div>
             <div className="TDContainer">
                 <h3>{truncateText(cleanTitle(title), 0, 60)}</h3><br />
