@@ -1,28 +1,32 @@
- .Gallery {
-  background: black;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  text-decoration: bold;
+.Gallery {
   text-align: center;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
-  grid-gap: 1rem;
+  grid-template-columns: 33vw 33vw 33vw;
+  justify-content: center;
 }
 
 .Img-Container {
+  border-radius: 6px;
   overflow: hidden;
+  color: black;
 }
 
 .Img-Container img {
-  width: 100%;
-  height: 45vh;
+  height: 20vw;
+  padding-bottom: 3%;
   object-fit: cover;
   transition: all 0.3s ease-out;
   cursor: pointer;
 }
 
 .Img-Container img:hover {
-  transform: scale(1.1);
+  transform: scale(1.02);
+}
+
+.RW-Desc {
+  color: black;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .Modal {
@@ -60,20 +64,18 @@
 .RW {
   background: rgb(212, 175, 55);
   font-size: 2.1rem;
-  border-radius: 15px;
+  border-radius: 6px;
   margin-left: 10%;
   margin-right: 10%;
-  padding: 0 auto;
   background: -webkit-linear-gradient(
     left top,
-    rgb(248, 208, 170),
-    rgb(212, 160, 55),
-    rgb(133, 109, 34)
+    rgba(248, 208, 170, 0.9),
+    rgba(212, 160, 55, 0.9),
+    rgba(133, 109, 34, 0.9)
   );
   -webkit-text-fill-color: transparent;
   text-align: center;
-  /* line-height: 1.3; */
-  padding: 2%;
+  padding: 1%;
 }
 
 .Spacer {
@@ -90,20 +92,46 @@
   width: 100%;
 }
 
+.FancyText3 {
+  font-size: 0.4em;
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.FancyText1::selection,
+.FancyText2::selection {
+  background: rgba(255, 255, 255, 0.404);
+  color: white;
+}
+
+.FancyText4 {
+  background: -webkit-linear-gradient(
+    right,
+    rgb(36, 14, 57),
+    rgb(81, 77, 160),
+    rgb(36, 14, 57)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* *********************************** */
 /* Mobile */
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .Gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     grid-gap: 1rem;
   }
   .RW {
+    display: flex;
+    flex-direction: row;
     background: rgb(212, 175, 55);
     color: black;
     font-size: 2.1rem;
-    border-radius: 15px;
+    border-radius: 6px;
     margin-left: 3%;
     margin-right: 3%;
     padding: 0 auto;
@@ -124,4 +152,21 @@
     text-align: center;
     margin-bottom: 8%;
   }
+
+  .FancyText3 {
+    padding-left: 5%;
+    text-align:left;
+    font-size: 0.5em;
+  }
+
+.Img-Container img {
+  width: 50vw;
+  height: 30vh;
+  padding-bottom: 3%;
+  object-fit: cover;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+
+
 }

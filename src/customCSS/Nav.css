@@ -17,6 +17,7 @@
   align-items: center;
   min-height: 5rem;
   position: fixed;
+      z-index: 999;
 }
 
 
