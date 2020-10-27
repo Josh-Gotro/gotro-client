@@ -126,8 +126,8 @@
     grid-gap: 1rem;
   }
   .RW {
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: row; */
     background: rgb(212, 175, 55);
     color: black;
     font-size: 2.1rem;
