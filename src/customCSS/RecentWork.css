@@ -155,13 +155,13 @@
 
   .FancyText3 {
     padding-left: 5%;
-    text-align:left;
+    text-align:center;
     font-size: 0.5em;
   }
 
 .Img-Container img {
-  width: 50vw;
-  height: 30vh;
+  width: 100vw;
+  min-height: 30vh;
   padding-bottom: 3%;
   object-fit: cover;
   transition: all 0.3s ease-out;
