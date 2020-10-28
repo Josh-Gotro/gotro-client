@@ -162,6 +162,7 @@
   }
 
 .Img-Container img {
+  vertical-position: top;
   display: block;
   width: 100vw;
   border-radius: 6px;
