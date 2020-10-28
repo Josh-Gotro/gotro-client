@@ -12,7 +12,8 @@
 }
 
 .Img-Container img {
-  height: 20vw;
+  width: 25vw;
+  border-radius: 6px;
   padding-bottom: 3%;
   object-fit: cover;
   transition: all 0.3s ease-out;
@@ -160,7 +161,9 @@
   }
 
 .Img-Container img {
+  display: block;
   width: 100vw;
+  border-radius: 6px;
   min-height: 30vh;
   padding-bottom: 3%;
   object-fit: cover;
