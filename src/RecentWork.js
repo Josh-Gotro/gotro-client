@@ -77,6 +77,7 @@ const RecentWork = () => {
                 <div className="Full">{viewProject}</div>
             </div>
         </div>
+        <div className="zigzag"></div>
     </>
     );
 }
