@@ -34,6 +34,7 @@ const RecentWork = () => {
     }
 
     return (<>
+        <div className="zigzag"></div>
         <div id="RW" className="Spacer" ></div>
         <div className="RWTitle"><h2>recent work</h2></div>
         <div className="Gallery">

@@ -117,18 +117,6 @@
   -webkit-text-fill-color: transparent;
 }
 
-.zigzag {
-  margin-top: 15%;
-  width:100vw;
-  height:30px;
-  background: 
-linear-gradient(45deg, rgba(212, 175, 55, 0.6) 10%, transparent 10%) 0 -50px,
-linear-gradient(135deg, rgba(212, 175, 55, 0.6) 10%, transparent 10%) 0  -50px,
-linear-gradient(225deg, rgba(212, 175, 55, 0.6) 15%, transparent 15%),
-linear-gradient(315deg, rgba(212, 175, 55, 0.6) 15%, transparent 15%);	
-background-size: 100px 100px;
-background-color: black;
-}
 
 /* *********************************** */
 /* Mobile */

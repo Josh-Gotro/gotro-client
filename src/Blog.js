@@ -34,6 +34,7 @@ const Blog = () => {
 
 
     return (
+        <>
         <div id="blog" className="BlogsContainer">
             <div className="MobileView">
                 <h1>BLOG</h1>
@@ -51,6 +52,8 @@ const Blog = () => {
                 <h1>G</h1 > <h2 id="purp">D</h2>
             </div>
         </div>
+            <div className="zigzag"></div>
+        </>
 
     );
 }
